@@ -13,6 +13,7 @@ def task_one():
 
 # task_one()
 
+
 def task_two():
     driver = webdriver.Chrome()
     driver.get("https://www.ebay.com/")
@@ -22,6 +23,7 @@ def task_two():
     driver.quit()
 
 # task_two()
+
 
 def task_three():
     driver = webdriver.Chrome()
@@ -36,6 +38,8 @@ def task_three():
     driver.quit()
 
 # task_three()
+
+
 def task_four():
     driver = webdriver.Chrome()
     driver.get("https://www.ebay.com/")
