@@ -1,0 +1,8 @@
+0 - "//div[@id='vl-flyout-nav']/ul/li/a"
+1 - "//div[@class='x-refine__item__title-container']"
+2 - "//div[@class='x-refine__item__title-container'][contains(text(), 'Brand')]"
+3 - "//li[@class='x-refine__main__list'][h3[contains(., 'Brand')]]//div[@class='x-refine__select__svg'][contains(., 'adidas')]//input"
+4 - "//li[starts-with(@id, 'item')]"
+"//li[starts-with(@id, 'item')][contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'adidas men samoa shoes')]"
+5 - "//ul[@id='gh-ul-nav']//a"
+# Devtools/Source -> Fn + F8
