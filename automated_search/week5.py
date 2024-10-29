@@ -1,4 +1,3 @@
-from gettext import gettext
 from selenium.webdriver.common.keys import Keys
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -26,9 +25,9 @@ def test_search():
         EC.presence_of_all_elements_located((By.XPATH, "//ul[@class='srp-results srp-grid clearfix']//span[@class='s-item__price']")))
 
     if "rolex" not in rolex_titles[0].text.lower():
-        mismatches.append("Title 1 doesn't contain 'rolex'")
+        mismatches.append(f"{rolex_titles[0].text} doesn't contain 'rolex'")
     if "rolex" not in rolex_titles[1].text.lower():
-        mismatches.append("Title 2 doesn't contain 'rolex'")
+        mismatches.append(f"{rolex_titles[0].text} doesn't contain 'rolex'")
 
     # Store title and price of the first two results in a variable
     rolex_results = [
@@ -87,9 +86,9 @@ def test_search():
             (By.XPATH, "//ul[@class='srp-results srp-grid clearfix']//span[@role='heading'][@aria-level='3']")))
     last = len(casio_titles) - 1
     if "casio" not in casio_titles[last].text.lower():
-        mismatches.append("Last title doesn't contain 'casio'")
+        mismatches.append(f"{casio_titles[last].text} title doesn't contain 'casio'")
     if "casio" not in casio_titles[last - 1].text.lower():
-        mismatches.append("Last but one title doesn't contain 'casio'")
+        mismatches.append(f"{casio_titles[last - 1].text} title doesn't contain 'casio'")
 
     # Save and print all the mismatches if any
     driver.quit()
